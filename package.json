@@ -1,0 +1,19 @@
+{
+  "name": "wbdv-sp21-xinyue-dang-server-node",
+  "version": "1.0.0",
+  "description": "Sample node server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XinyueDang/wbdv-sp21-xinyue-dang-server-node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XinyueDang/wbdv-sp21-xinyue-dang-server-node/issues"
+  },
+  "homepage": "https://github.com/XinyueDang/wbdv-sp21-xinyue-dang-server-node#readme"
+}
