@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/XinyueDang/wbdv-sp21-xinyue-dang-server-node/issues"
   },
-  "homepage": "https://github.com/XinyueDang/wbdv-sp21-xinyue-dang-server-node#readme"
+  "homepage": "https://github.com/XinyueDang/wbdv-sp21-xinyue-dang-server-node#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
