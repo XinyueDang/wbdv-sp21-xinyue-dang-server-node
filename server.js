@@ -4,6 +4,10 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 const session = require('express-session')
 app.use(session({
     secret: 'keyboard cat',
@@ -11,12 +15,11 @@ app.use(session({
     saveUninitialized: true,
 }))
 
-const MONGODB_URL = process.env.MONGODB_URL;
 const mongoose = require('mongoose');
 mongoose.connect(
-    MONGODB_URL,
+    process.env.MONGODB_URL,
     {useNewUrlParser: true, useUnifiedTopology: true});
-
+    mongoose.set('debug', true);
 
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
